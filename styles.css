@@ -11,7 +11,7 @@ body {
 }
 
 p {
-  color:hsl(229, 6%, 66%);
+  color: hsl(229, 6%, 66%);
 }
 
 .page {
@@ -29,6 +29,7 @@ h1 {
   font-size: 2em;
   font-weight: 200;
 }
+
 strong {
   color: hsl(234, 12%, 34%);
 }
@@ -36,7 +37,7 @@ strong {
 header p {
   font-size: 15px;
   font: Poppins;
-  width:500px;
+  width: 500px;
   text-align: center;
 }
 
@@ -44,11 +45,11 @@ header p {
   font: Poppins;
   font-size: 20px;
   font-weight: normal;
-  color:hsl(234, 12%, 34%)
+  color: hsl(234, 12%, 34%)
 }
 
 .card-container {
-  width:100%;
+  width: 100%;
   display: flex;
   justify-content: center;
   margin-top: 50px;
@@ -60,9 +61,8 @@ header p {
 }
 
 /* Styling for columns */
-
 .card-column-one,
-.card-column-three{
+.card-column-three {
   display: flex;
   height: 500px;
   width: 300px;
@@ -73,7 +73,7 @@ header p {
   display: flex;
   width: 300px;
   height: 500px;
-  align-items:center;
+  align-items: center;
   flex-direction: column;
   justify-content: space-around;
 }
@@ -84,14 +84,13 @@ header p {
   height: 200px;
   /* border: 1px solid black;  */
   border-radius: 5px;
-/*box shadow: hor ver blur spread color*/
+  /*box shadow: hor ver blur spread color*/
   box-shadow: 0px 15px 15px -19px hsl(212, 86%, 64%),
-              0px 0px 5px -3px hsl(212, 86%, 64%);
+    0px 0px 5px -3px hsl(212, 86%, 64%);
   padding: 20px;
   cursor: pointer;
   flex-wrap: wrap;
   position: relative;
-
 }
 
 /* Styling for what happens when card is hovered on */
@@ -104,10 +103,8 @@ header p {
 }
 
 /*  Styling for colour of cards */
-
 .supervisor {
   border-top: 3px solid hsl(180, 62%, 55%);
-
 }
 
 .team-builder {
@@ -121,6 +118,7 @@ header p {
 .calculator {
   border-top: 3px solid hsl(212, 86%, 64%);
 }
+
 /* Styling for footer */
 .attribution {
   font-size: 11px;
@@ -132,72 +130,102 @@ header p {
 }
 
 /* Image Styling */
-
 img {
   position: absolute;
-  bottom:5px;
-  right:5px;
+  bottom: 5px;
+  right: 5px;
 }
-
-
-
-
-
 
 /* Responsive design- Mobile */
-
 @media screen and (max-width:425px) {
 
-/* Mobile Header Styling  */
-
-header {
-  width: 100%;
-  align-items: center;
-}
-
-/* Styling for header */
-h1{
-  font-size: 1.5em;
-}
-
-/* Styling for the paragraph in header */
-header p {
-  font: Poppins;
-  font-size: 12px;
-  width:80%;
-  text-align: center;
-  word-wrap: break-word;
-}
-
-/* Mobile styling for cards */
-  .card-container{
+  /* Mobile Header Styling  */
+  header {
+    width: 100%;
     align-items: center;
   }
 
-  .column{
-    margin:0px;
+  /* Styling for header */
+  h1 {
+    font-size: 1.5em;
+  }
+
+  /* Styling for the paragraph in header */
+  header p {
+    font: Poppins;
+    font-size: 12px;
+    width: 80%;
+    text-align: center;
+    word-wrap: break-word;
+  }
+
+  /* Mobile styling for cards */
+  .card-container {
+    align-items: center;
+  }
+
+  .column {
+    margin: 0px;
     padding: 0px;
     height: 100%;
   }
 
   .card-container {
-    flex-direction:column;
+    flex-direction: column;
     padding: 0px;
-    margin-top:60px;
+    margin-top: 60px;
   }
 
   .card-item {
     margin: 15px 0px;
   }
-/* Styling for footer */
 
+  /* Styling for footer */
 }
-  .attribution {
-    margin: 20px 0px 10px 0px;
+
+.attribution {
+  margin: 20px 0px 10px 0px;
+}
+
+
+/* Tablet Sytles */
+
+@media screen and (min-width:425px) and (max-width:768px) {
+  .column {
+
+    height: 200px;
+    width:100%;
+    /* min-width: 600px;  */ Restrict the column to a certain size
+    /* border: 1px solid black; */
   }
+
+  .card-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card-column-two {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .card-item {
+    width: 300px;
+    height: 200px;
+  }
+
+  .card-column-one,
+  .card-column-three {
+    justify-content: center;
 }
-
-@media screen and (max-width:425px) and (max-width: 768px) {
-
+.karma,
+.team-builder {
+  min-width: 300px;
+}
+header {
+display: flex;
+align-items: center;
+}
 
 }
